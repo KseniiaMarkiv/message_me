@@ -1,5 +1,10 @@
 {
-  "name": "message_me",
-  "private": true,
-  "dependencies": {}
+    "name": "message_me",
+    "private": true,
+    "dependencies": {
+        "jquery": "^3.6.0"
+    },
+    "devDependencies": {
+        "semantic-ui-sass": "^2.4.2"
+    }
 }
