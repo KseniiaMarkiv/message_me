@@ -9,12 +9,17 @@
     Account <i class="dropdown icon"></i>
     <div class="menu">
       <a class="item">Log out</a>
-      <a class="item">Log in</a>
+      <%= link_to "Log in", login_path, class: "item" %>
       <a class="item">Sign up</a>
     </div>
   </div>
   <div class="item">
-      <div class="ui inverted teal button">Sign Up</div>
+    <div class="ui animated inverted teal button" tabindex="0">
+      <div class="visible content">Sign Up</div>
+        <div class="hidden content">
+          <i class="signup icon"></i>
+        </div>
+      </div>
   </div>
 </div>
 
