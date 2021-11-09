@@ -6,18 +6,17 @@
   <div class="ui selection dropdown item">
     Account <i class="dropdown icon"></i>
     <div class="menu">
-      <a class="item">Log out</a>
-      <%= link_to "Log in", login_path, class: "item" %>
-      <a class="item">Sign up</a>
+      <% if logged_in? %>
+        <%= link_to "Logout", logout_path, method: :delete, class: "item" %>
+      <% else %>
+        <%= link_to "Log in", login_path, class: "item" %>
+      <% end %>
     </div>
   </div>
-  <div class="item">
-    <div class="ui animated inverted teal button" tabindex="0">
-      <div class="visible content">Sign Up</div>
-        <div class="hidden content">
-          <i class="signup icon"></i>
-        </div>
-      </div>
-  </div>
+  <% if !logged_in? %>
+    <div class="item">
+      <%= link_to "Log in", login_path, class: "ui inverted teal button" %>
+    </div>
+  <% end %>
 </div>
 

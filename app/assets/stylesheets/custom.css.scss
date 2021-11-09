@@ -15,11 +15,22 @@
     margin: 20px;
 }
 
-.visible.content.own-fix {
+#own-fix {
+    background-color: #00b5ad;
+}
+
+.own-fix {
     font-family: "Lato", "Helvetica Neue", Arial, Helvetica, sans-serif;
     font-size: 15px;
     font-style: bold;
     color: white;
     border: 0px;
-    background-color: #00B5AD;
+}
+
+.ui.animated.teal.button.own-fix {
+    padding-left: 0%;
+}
+
+button.own-fix {
+    background-color: #009c95;
 }

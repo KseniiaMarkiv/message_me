@@ -27,13 +27,16 @@
             <i class="lock icon"></i>
           </div>
         </div>
-        <div class="ui animated teal submit button" tabindex="0">
-          <%= f.button "Login", class: "visible content own-fix" %>
-            <div class="hidden content">
-              <i class="icon users"></i>
-            </div>
-        </div>
         
+        
+          <div class="ui animated teal button own-fix" tabindex="0">
+            <%= f.button "Login", id: "own-fix", class: "visible content own-fix submit button" %>
+              <button class="teal hidden content own-fix">
+                <i class="icon users"></i>
+              </button>
+          </div> 
+
+
       <% end %>      
     </div>
     <div class="middle aligned column">
