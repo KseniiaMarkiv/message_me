@@ -1,4 +1,9 @@
 @import "semantic-ui";
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;1,300&display=swap');
+:root {
+    --teal-button: #00b5ad;
+}
+
 .chatbox {
     height: 450px;
     margin-top: 20px;
@@ -16,7 +21,7 @@
 }
 
 #own-fix {
-    background-color: #00b5ad;
+    background-color: var(--teal-button);
 }
 
 .own-fix {
@@ -37,4 +42,24 @@ button.own-fix {
 
 #Messages {
     font-family: Garamond, serif;
+}
+
+span.message-body {
+    font-size: 1.2em;
+    // font-family: 'Ubuntu', sans-serif;
+    // font-weight: Regular 400;
+    // text-transform: uppercase;
+    //letter-spacing: 1px;
+    // font-family: "Sofia", sans-serif;
+    color: var(--teal-button);
+    // color: rgb(253, 253, 229);
+    // text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+p.message-body {
+    font-family: 'Ubuntu', sans-serif;
+    font-style: italic;
+    // font-weight: light 100;
+    font-size: 1.1em;
+    text-indent: 1.2em;
 }
