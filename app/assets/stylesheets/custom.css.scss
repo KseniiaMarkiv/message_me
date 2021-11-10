@@ -69,3 +69,8 @@ p.message-body {
     text-indent: 1.2em;
     margin-bottom: 1px;
 }
+
+#messages {
+    height: 15em;
+    overflow: auto;
+}
