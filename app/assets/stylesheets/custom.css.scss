@@ -1,5 +1,10 @@
 @import "semantic-ui";
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;1,300&display=swap');
+@font-face {
+    font-family: Calibri Light Italic;
+    src: url(fonts/calibrilightitalic/calibrili.ttf);
+}
+
 :root {
     --teal-button: #00b5ad;
 }
@@ -57,9 +62,8 @@ span.message-body {
 }
 
 p.message-body {
-    font-family: 'Ubuntu', sans-serif;
-    font-style: italic;
-    // font-weight: light 100;
+    // font-family: 'Ubuntu', sans-serif;
+    font-family: Calibri Light Italic;
     font-size: 1.1em;
     text-indent: 1.2em;
 }
